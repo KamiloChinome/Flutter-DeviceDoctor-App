@@ -13,7 +13,12 @@ final appRouter = GoRouter(
           path: 'presentation',
           name: PresentationScreen.name,
           builder: (context, state) => const PresentationScreen(),
-        )
+        ),
+        GoRoute(
+          path: 'mobile-devices',
+          name: MobileDevicesScreen.name,
+          builder: (context, state) => const MobileDevicesScreen(),
+        ),
       ]
     )
   ]
