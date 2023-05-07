@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
   static const name = 'home-screen';
@@ -7,6 +8,7 @@ class HomeScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    final textStyle = Theme.of(context).textTheme;
     Map<String, String> options = {
       'dispositivos moviles': 'assets/images/mobile.jpg',
       'Computadoras': 'assets/images/pc.jpg',
@@ -17,16 +19,19 @@ class HomeScreen extends StatelessWidget {
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
-          const SliverAppBar(
+          SliverAppBar(
             floating: true,
             centerTitle: true,
             backgroundColor: Colors.transparent,
-            title: Text('Device Doctor', style: TextStyle(fontSize: 30),),
+            title: Text('Device Doctor', style: textStyle.titleLarge),
             actions: [
-              Icon(Icons.info_outline_rounded, size: 32,),
-              SizedBox(width: 5,)
+              IconButton(
+                onPressed: () => context.push('/presentation'), 
+                icon: const Icon(Icons.info_outline_rounded, size: 32,),
+              ),
+              const SizedBox(width: 5,)
             ],
-            leading: Icon(Icons.menu, size: 30,),
+            leading: const Icon(Icons.menu, size: 30,),
           ),
           SliverList(delegate: SliverChildBuilderDelegate(
           (context, index) {

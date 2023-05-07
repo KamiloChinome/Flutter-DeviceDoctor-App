@@ -2,12 +2,22 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   ThemeData getTheme() => ThemeData(
-    useMaterial3: true,
     fontFamily: 'Prompt',
-    scaffoldBackgroundColor: const Color(0xff16202a),
+    useMaterial3: true,
+    brightness: Brightness.dark,
+    colorSchemeSeed: const Color(0xff16202a),
+    appBarTheme: const AppBarTheme(
+      titleTextStyle: TextStyle(
+        fontSize: 30,
+        fontFamily: 'Prompt',
+      )
+    ),
     textTheme: const TextTheme(
+      titleLarge: TextStyle(
+        fontSize: 30
+      ),
       bodyMedium: TextStyle(
-        color: Colors.white
+        fontSize: 20
       ),
     ),
   );
