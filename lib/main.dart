@@ -1,6 +1,8 @@
-import 'package:circuitos_app/presentation/screens/home_screen.dart';
+import 'package:circuitos_app/config/router/app_router.dart';
+import 'package:circuitos_app/config/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 
 void main(){
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarColor: Colors.transparent,));
@@ -12,22 +14,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      initialRoute: 'home',
-      routes: {
-        'home':(context) => const HomeScreen(),
-      },
-      theme: ThemeData(
-        fontFamily: 'Prompt',
-        scaffoldBackgroundColor: const Color(0xff16202a),
-        textTheme: const TextTheme(
-          bodyMedium: TextStyle(
-            color: Colors.white
-          ),
-        )
-      ),
+      routerConfig: appRouter,
+      theme: AppTheme().getTheme()
         
     );
   }
