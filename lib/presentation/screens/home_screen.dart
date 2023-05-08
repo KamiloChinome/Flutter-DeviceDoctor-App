@@ -16,6 +16,10 @@ class HomeScreen extends StatelessWidget {
       'Noticias de tecnologia': 'assets/images/news.jpg',
       'Evalua tus conocimientos': 'assets/images/test.jpg',
     };
+    final routes = [
+      '/mobile-devices',
+      
+    ];
     return Scaffold(
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
@@ -38,7 +42,7 @@ class HomeScreen extends StatelessWidget {
           (context, index) {
             final option = options.entries.toList()[index];
             return  GestureDetector(
-              onTap: () => context.push('/mobile-devices'),
+              onTap: () => context.push(routes[index]),
               child: CardSectionWidget(assetImage: option.value, text: option.key,));},
           childCount: options.length
           )),
