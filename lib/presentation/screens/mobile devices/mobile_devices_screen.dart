@@ -10,6 +10,13 @@ class MobileDevicesScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    List routes = [
+      '/mobile-devices/tools',
+      '/mobile-devices/tools',
+      '/mobile-devices/tools',
+      '/mobile-devices/tools',
+      '/mobile-devices/tools',
+    ];
     Map<String, String> options = {
       'Herramientas y Equipo': 'assets/images/tools.jpg',
       'Desmontaje': 'assets/images/mobile-devices-disassembly.jpg',
@@ -36,9 +43,12 @@ class MobileDevicesScreen extends StatelessWidget {
             childCount: 5,
             (context, index) {
               final option = options.entries.toList()[index];
-              return CardSectionWidget(
-                assetImage: option.value, 
-                text: option.key
+              return GestureDetector(
+                onTap: () => context.push(routes[index]),
+                child: CardSectionWidget(
+                  assetImage: option.value, 
+                  text: option.key
+                ),
               );
             } 
           ))

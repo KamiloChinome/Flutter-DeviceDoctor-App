@@ -18,6 +18,13 @@ final appRouter = GoRouter(
           path: 'mobile-devices',
           name: MobileDevicesScreen.name,
           builder: (context, state) => const MobileDevicesScreen(),
+          routes: [
+            GoRoute(
+              path: 'tools',
+              name: ToolsScreen.name,
+              builder: (context, state) => const ToolsScreen(),
+            ),
+          ]
         ),
       ]
     )
