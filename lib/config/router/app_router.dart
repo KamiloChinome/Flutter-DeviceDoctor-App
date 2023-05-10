@@ -24,6 +24,11 @@ final appRouter = GoRouter(
               name: ToolsScreen.name,
               builder: (context, state) => const ToolsScreen(),
             ),
+            GoRoute(
+              path: 'disassembly',
+              name: DisassemblyScreen.name,
+              builder: (context, state) => const DisassemblyScreen(),
+            ),
           ]
         ),
       ]
