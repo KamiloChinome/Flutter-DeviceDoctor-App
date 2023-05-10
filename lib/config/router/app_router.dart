@@ -29,6 +29,11 @@ final appRouter = GoRouter(
               name: DisassemblyScreen.name,
               builder: (context, state) => const DisassemblyScreen(),
             ),
+            GoRoute(
+              path: 'preventive',
+              name: PreventiveScreen.name,
+              builder: (context, state) => const PreventiveScreen(),
+            ),
           ]
         ),
       ]

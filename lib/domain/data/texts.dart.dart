@@ -26,6 +26,15 @@ final disassembly = [
   InfoModel(title: 'Desmonta los demás componentes', text: 'Si es necesario acceder a otros componentes, como la cámara, el altavoz, el conector de carga, entre otros, retíralos siguiendo las instrucciones específicas para cada componente. Utiliza las herramientas adecuadas y ten cuidado de no dañarlos.', image: 'assets/images/mobile-devices-disassembly.jpg'),
 ];
 
+final preventive = [
+  InfoModel(title: 'Limpieza regular', text: 'La acumulación de polvo, suciedad y residuos puede afectar el rendimiento y la durabilidad de un dispositivo celular. Realiza una limpieza regular utilizando un paño suave y seco para eliminar el polvo de la superficie y los puertos. ', image: ''),
+  InfoModel(title: 'Protección de pantalla', text: 'Utiliza protectores de pantalla de calidad y fundas protectoras para evitar arañazos, grietas y daños en la pantalla. Estos accesorios pueden ayudar a prolongar la vida útil de la pantalla y protegerla de golpes y caídas accidentales.', image: ''),
+  InfoModel(title: 'Actualizaciones de software', text: 'Mantén el software del dispositivo actualizado instalando las últimas actualizaciones y parches de seguridad. Las actualizaciones de software suelen incluir mejoras de rendimiento, solución de errores y parches de seguridad ', image: ''),
+  InfoModel(title: 'Gestión del almacenamiento', text: 'Realiza un seguimiento regular del espacio de almacenamiento disponible en el dispositivo. Elimina archivos innecesarios, aplicaciones no utilizadas y realiza copias de seguridad de los datos importantes en una ubicación segura.', image: ''),
+  InfoModel(title: 'Control de la temperatura', text: 'Evita exponer el dispositivo a temperaturas extremas, tanto altas como bajas. Las temperaturas extremas pueden dañar la batería y otros componentes del dispositivo. ', image: ''),
+  InfoModel(title: 'Respaldo regular de datos', text: 'Realiza copias de seguridad regulares de los datos importantes almacenados en el dispositivo, como contactos, fotos, videos y archivos. ', image: ''),
+];
+
 // final disassembly = [
 //   InfoModel(title: 'Retira la cubierta trasera', text: '', image: 'assets/images/destornillador.jpg'),
 //   InfoModel(title: 'Retira la batería', text: '', image: 'assets/images/pinzas.jpg'),

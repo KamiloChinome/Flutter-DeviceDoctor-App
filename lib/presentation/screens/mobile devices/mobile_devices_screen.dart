@@ -13,7 +13,7 @@ class MobileDevicesScreen extends StatelessWidget {
     List routes = [
       '/mobile-devices/tools',
       '/mobile-devices/disassembly',
-      '/mobile-devices/tools',
+      '/mobile-devices/preventive',
       '/mobile-devices/tools',
       '/mobile-devices/tools',
     ];
