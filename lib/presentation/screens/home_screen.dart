@@ -1,3 +1,5 @@
+import 'package:circuitos_app/domain/data/texts.dart.dart';
+import 'package:circuitos_app/domain/models/tools_model.dart';
 import 'package:circuitos_app/presentation/widgets/shared/card_section_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -9,17 +11,8 @@ class HomeScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    final List<InfoModel> info = homeSections;
     final textStyle = Theme.of(context).textTheme;
-    Map<String, String> options = {
-      'dispositivos moviles': 'assets/images/mobile.jpg',
-      'Computadoras': 'assets/images/pc.jpg',
-      'Noticias de tecnologia': 'assets/images/news.jpg',
-      'Evalua tus conocimientos': 'assets/images/test.jpg',
-    };
-    final routes = [
-      '/mobile-devices',
-      
-    ];
     return Scaffold(
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
@@ -40,11 +33,10 @@ class HomeScreen extends StatelessWidget {
           ),
           SliverList(delegate: SliverChildBuilderDelegate(
           (context, index) {
-            final option = options.entries.toList()[index];
             return  GestureDetector(
-              onTap: () => context.push(routes[index]),
-              child: CardSectionWidget(assetImage: option.value, text: option.key,));},
-          childCount: options.length
+              onTap: () => context.push(info[index].route),
+              child: CardSectionWidget(info: info[index],));},
+          childCount: info.length
           )),
         ]
       )

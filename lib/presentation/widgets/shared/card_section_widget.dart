@@ -1,11 +1,11 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:circuitos_app/domain/models/tools_model.dart';
 
 class CardSectionWidget extends StatelessWidget {
 
-  final String assetImage;
-  final String text;
-  const CardSectionWidget({super.key, required this.assetImage, required this.text});
+  final InfoModel info;
+  const CardSectionWidget({super.key, required this.info, });
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -31,7 +31,7 @@ class CardSectionWidget extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: const BorderRadius.only(topLeft: Radius.circular(30), topRight: Radius.circular(30)),
                 child: Image(
-                  image: AssetImage(assetImage),
+                  image: AssetImage(info.image),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -44,7 +44,7 @@ class CardSectionWidget extends StatelessWidget {
                 color: Color(0xff303030),
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
               ),
-              child: Text(text, style: const TextStyle(fontSize: 25),textAlign: TextAlign.center),
+              child: Text(info.title, style: const TextStyle(fontSize: 25),textAlign: TextAlign.center),
             ),
           ],
         ),

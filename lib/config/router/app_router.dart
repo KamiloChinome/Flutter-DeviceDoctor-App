@@ -34,6 +34,11 @@ final appRouter = GoRouter(
               name: PreventiveScreen.name,
               builder: (context, state) => const PreventiveScreen(),
             ),
+            GoRoute(
+              path: 'repairs',
+              name: RepairsScreen.name,
+              builder: (context, state) => const RepairsScreen(),
+            ),
           ]
         ),
       ]
