@@ -1,3 +1,5 @@
+import 'package:circuitos_app/presentation/screens/laptops/laptops_screens.dart';
+import 'package:circuitos_app/presentation/screens/laptops/repairs_laptop_screen.dart';
 import 'package:circuitos_app/presentation/screens/screens.dart';
 import 'package:go_router/go_router.dart';
 
@@ -13,6 +15,18 @@ final appRouter = GoRouter(
           path: 'presentation',
           name: PresentationScreen.name,
           builder: (context, state) => const PresentationScreen(),
+        ),
+        GoRoute(
+          path: 'laptops',
+          name: LaptopsScreen.name,
+          builder: (context, state) => const LaptopsScreen(),
+          routes: [
+            GoRoute(
+              path: 'laptop-repairs',
+              name: RepairsLaptopsScreen.name,
+              builder: (context, state) => const RepairsLaptopsScreen(),
+            ),
+          ]
         ),
         GoRoute(
           path: 'mobile-devices',

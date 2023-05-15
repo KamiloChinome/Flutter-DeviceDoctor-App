@@ -21,7 +21,7 @@ class ToolsScreen extends StatelessWidget {
             floating: true,
           ),
           SliverList(delegate: SliverChildBuilderDelegate(
-            childCount: 9,
+            childCount: tools.length,
             (context, index) => InfoCard(info: tools[index]))
           )
         ],

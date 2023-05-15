@@ -36,7 +36,7 @@ class InfoCard extends StatelessWidget {
               const SizedBox(height: 5),
               Padding(
                 padding: const EdgeInsets.all(15),
-                child: Text(info.text, style: textStyle.bodyMedium, overflow: TextOverflow.ellipsis, textAlign: TextAlign.justify, maxLines: 10,),
+                child: Text(info.text, style: textStyle.bodyMedium, overflow: TextOverflow.ellipsis, textAlign: TextAlign.justify, maxLines: 100,),
               )
             ],
           ),
