@@ -38,6 +38,13 @@ final appRouter = GoRouter(
               path: 'repairs',
               name: RepairsScreen.name,
               builder: (context, state) => const RepairsScreen(),
+              routes: [
+                GoRoute(
+                  path: 'repair',
+                  name: RepairScreen.name,
+                  builder: (context, state) => const RepairScreen(),
+                ),
+              ]
             ),
           ]
         ),

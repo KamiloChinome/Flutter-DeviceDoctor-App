@@ -1,3 +1,5 @@
+export 'package:circuitos_app/presentation/screens/mobile%20devices/repair_screen.dart';
+
 export 'package:circuitos_app/presentation/screens/mobile%20devices/repairs_screen.dart';
 
 export 'package:circuitos_app/presentation/screens/mobile%20devices/preventive_screen.dart';

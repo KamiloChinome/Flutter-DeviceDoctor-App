@@ -50,9 +50,31 @@ final movileDevices = [
 ];
 
 final repairs = [
-  InfoModel(route: '', title: 'Reemplazo de pantalla', text: '', image: 'assets/images/carcasa1.jpg'),
-  InfoModel(route: '', title: 'Reemplazo de batería', text: '', image: 'assets/images/bateria1.jpg'),
-  InfoModel(route: '', title: 'Conector de carga', text: '', image: 'assets/images/puertomovil.jpg'),
-  InfoModel(route: '', title: 'Botón de encendido/apagado', text: '', image: 'assets/images/reparar-botonmovil.jpg'),
+  InfoModel(
+    route: '/mobile-devices/repairs/repair', 
+    title: 'Reemplazo de pantalla', 
+    text: 
+    '1. Apaga el dispositivo y desconéctalo de cualquier fuente de energía.\n \n2. Retira la cubierta trasera y la batería, si es posible.\n \n3. Desconecta los cables flexibles que conectan la pantalla a la placa base.\n \n4. Retira los tornillos que sujetan la pantalla en su lugar.\n \n5. Retira cuidadosamente la pantalla dañada y coloca la nueva pantalla en su lugar.\n \n6. Vuelve a colocar los tornillos y conecta los cables flexibles.\n \n7. Vuelve a colocar la batería y la cubierta trasera.\n \n8. Enciende el dispositivo y verifica el funcionamiento de la nueva pantalla.', 
+    image: 'assets/images/carcasa1.jpg',
+    
+  ),
+  InfoModel(
+    route: '/mobile-devices/repairs/repair', 
+    title: 'Reemplazo de batería', 
+    text: '1. Apaga el dispositivo y desconéctalo de cualquier fuente de energía.\n\n2. Retira la cubierta trasera, si es necesario.\n\n3. Localiza la batería y retira los tornillos o las pestañas de sujeción.\n\n4. Desconecta los cables que conectan la batería a la placa base.\n\n5. Retira la batería antigua y coloca la nueva batería en su lugar\n\n6. Conecta los cables de la batería a la placa base.\n\n7. Vuelve a colocar los tornillos o las pestañas de sujeción.\n\n8.  Si es necesario, vuelve a colocar la cubierta trasera.\n\n9. Enciende el dispositivo y verifica el funcionamiento de la nueva batería.', 
+    image: 'assets/images/bateria1.jpg'
+  ),
+  InfoModel(
+    route: '/mobile-devices/repairs/repair', 
+    title: 'Conector de carga', 
+    text: '1. Apaga el dispositivo y desconéctalo de cualquier fuente de energía.\n\n2. Retira la cubierta trasera, si es necesario.\n\n3. Localiza el conector de carga y retira los tornillos o las pestañas de sujeción.\n\n4. Desconecta los cables que conectan el conector de carga a la placa base.\n\n5. Retira el conector de carga antiguo y coloca el nuevo conector en su lugar.\n\n6. Conecta los cables del conector de carga a la placa base.\n\n7. Vuelve a colocar los tornillos o las pestañas de sujeción.\n\n8. Si es necesario, vuelve a colocar la cubierta trasera.\n\n9. Enciende el dispositivo y verifica el funcionamiento del nuevo conector de carga.', 
+    image: 'assets/images/puertomovil.jpg'
+  ),
+  InfoModel(
+    route: '/mobile-devices/repairs/repair', 
+    title: 'Botón de encendido/apagado', 
+    text: '1.Reúne las herramientas necesarias y trabaja en un área limpia y bien iluminada.\n\n2. Retira la cubierta trasera y la batería (si es posible) y abre el teléfono con herramientas adecuadas.\n\n3. Localización del botón: Identifica la ubicación del botón de encendido/apagado en la placa del teléfono.\n\n4. Inspección y limpieza: Examina visualmente el botón y límpialo de suciedad o residuos.\n\n5. Reparación o reemplazo: Intenta reparar el botón si es posible o considera reemplazarlo por uno nuevo y compatible.\n\n6. Desmontaje adicional: Retira cualquier componente que bloquee el acceso al botón de encendido/apagado.\n\n7. Reemplazo de partes: Si es necesario, reemplaza partes o componentes específicos del botón.\n\n8. Ensamblaje: Vuelve a colocar todas las partes y asegura las conexiones y cables en su lugar.\n\n9. Prueba: Enciende el teléfono y verifica el funcionamiento del botón de encendido/apagado. \n\n10. Ajustes finales: Realiza pruebas adicionales para asegurarte de que el botón responde y funciona correctamente.', 
+    image: 'assets/images/reparar-botonmovil.jpg'
+  ),
 ];
 //
